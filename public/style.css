@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* utilities */
+.u-margin-b-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-t-medium {
+  margin-top: 4rem;
+}
+
+/*
+  ESTADO INICIAL: botão
+*/
+.btn {
+  font-size: 1rem;
+  background-color: #fff;
+  color: #ff2525;
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+  text-decoration: none;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #ff2525;
+}
+
+/*
+  ESTADO HOVER: botão
+*/
+.btn:hover {
+
+}
+
+/*
+  ESTADO PRESSIONADO: botão
+*/
+.btn:active, .btn:focus {
+
+}
+
+
+/* HEADER */
+.header {
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__container {
+  text-align: center;
+}
+
+.header__title {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 5rem;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
+/* SEC 1 */
+.sec-um {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-um > div {
+  width: 30%;
+}
+
+/*
+  ESTADO INICIAL: imagem gatinho
+*/
+.sec-um__imagem img {
+  width: 100%;
+  border-radius: 4rem;
+}
+
+/*
+  ESTADO HOVER: imagem gatinho
+*/
+.sec-um__imagem img:hover {
+
+}
+
+
+/*
+  ESTADO INICIAL: texto
+*/
+.sec-um__text {
+  color: black;
+}
+
+/*
+  ESTADO HOVER: texto
+*/
+.sec-um__text:hover {
+
+}
+
+
+/*
+  ESTADO INICIAL: lista
+*/
+.sec-um__lista li {
+  margin: 0;
+}
+
+/*
+  ESTADO PRESSIONADO: lista
+*/
+.sec-um__lista li:active {
+
+}
+
+/* SEC 2 */
+.sec-dois {
+  min-height: 25rem;
+}
+
+.sec-dois__keyframes {
+  min-height: 7rem;
+  display: flex;
+  align-items: flex-end;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/*
+  QUADRADO
+*/
+.square {
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  transform: translateX(-50%);
+  position: relative;
+  animation: quadrado 5s alternate infinite ease-in-out;
+}
+
+/*
+  KEYFRAMES - QUADRADO
+*/
+@keyframes quadrado {
+  /* ESTADO INICIAL */
+  0% {
+
+  }
+  /* ESTADO METADE */
+  50% {
+
+  }
+  /* ESTADO FINAL */
+  100% {
+
+  }
+}
+
+/* SEC TRES */
+.sec-tres {
+  text-align: center;
+  min-height: 8rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-around;
+  max-width: 11rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  opacity: 0;
+  transition: .5s all;
+}
+
+.loader.active {
+  opacity: 1;
+}
+
+.circle {
+  background-color: #ccc;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  top: 0;
+  opacity: 1;
+}
+
+#circleOne {
+  animation: loading 1s ease-in-out infinite alternate;
+}
+
+#circleTwo {
+  animation: loading 1s .25s ease-in-out infinite alternate;
+}
+
+#circleThree {
+  animation: loading 1s .5s ease-in-out infinite alternate;
+}
+
+/* 
+  KEYFRAMES LOADING
+*/
+@keyframes loading {
+  0% {
+
+  }
+  100% {
+
+  }
+}
+
+/* SEC QUATRO */
+.sec-quatro {
+  text-align: center;
+}
+
+.sec-quatro__cenario {
+  position: relative;
+  min-height: 18rem;
+}
+
+.sec-quatro__cenario > img {
+  position: absolute;
+  bottom: 0;
+}
+
+.img-caixa {
+  right: 90%;
+  max-height: 5rem;
+}
+
+.caixa-animation {
+  animation: caixa 1s 2s ease forwards, caixa-entregue 5s 7s ease forwards;
+}
+
+.img-senhora {
+  right: 0;
+  max-height: 12rem;
+}
+
+.senhora-animation {
+  animation: senhora .5s ease-in-out infinite alternate;
+}
+
+.img-caminhao {
+  right: 10rem;
+}
+
+.caminhao-animation {
+  animation: caminhao 10s ease forwards;
+}
+
+@keyframes caminhao {
+
+}
+
+@keyframes caixa {
+  from {
+
+  }
+  to {
+
+  }
+}
+
+@keyframes caixa-entregue {
+
+}
+
+@keyframes senhora {
+  from {
+
+  }
+  to {
+
+  }
+}
