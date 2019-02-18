@@ -1,0 +1,73 @@
+<html lang="pt-Bt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Workshop Codamos - Animações em CSS</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Animações!</h1>
+      <a href="#" class="btn">Veja mais</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section sec-um">
+      <div class="sec-um__imagem">
+        <img src="img/gatinho.jpg" alt="Gatinha mãe e gatinho filho um do lado do outro">
+      </div>
+      <div class="sec-um__text">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, aspernatur ipsum alias, nam asperiores sed nostrum voluptas laboriosam tempora animi eveniet, adipisci necessitatibus saepe nemo minus doloremque placeat nulla nihil.</p>
+      </div>
+      <div class="sec-um__lista">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section sec-dois bg-gray">
+      <h2>Keyframes</h2>
+      <div class="sec-dois__keyframes">
+        <div class="square"></div>
+      </div>
+    </section>
+
+    <section class="section sec-tres">
+      <h3 class="u-margin-b-medium">Projeto #1</h3>
+
+      <a href="#" class="btn btn-red" id="btnLoader">Habilitar loader</a>
+
+      <div class="sec-tres center u-margin-t-medium">
+        <div class="loader active" id="loader">
+          <div class="circle" id="circleOne"></div>
+          <div class="circle" id="circleTwo"></div>
+          <div class="circle" id="circleThree"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sec-quatro bg-gray">
+      <h3>Projeto #2</h3>
+
+      <a href="#" class="btn btn-red" id="btnAnimation">Play/Pause</a>
+
+      <div class="sec-quatro__cenario">
+        <img src="img/caixa.png" alt="Caixa de papelão, pra entrega" class="img-caixa caixa-animation animation">
+        <img src="img/caminhao.png" alt="Caminhão amarelo, que vai pegar a caixa" class="img-caminhao caminhao-animation animation">
+        <img src="img/senhora.png" alt="Uma senhora e vários animais esperando sua entrega" class="img-senhora senhora-animation animation">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

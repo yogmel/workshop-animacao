@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* utilities */
+.u-margin-b-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-t-medium {
+  margin-top: 4rem;
+}
+
+
+.btn {
+  font-size: 1rem;
+  background-color: #fff;
+  color: #ff2525;
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+  text-decoration: none;
+  transition: .5s all;
+  position: relative;
+  top: 0;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #ff2525;
+}
+
+.btn:hover {
+  top: -1rem;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.btn:active, .btn:focus {
+  top: -.5rem;
+  box-shadow: 1px 5px 3px rgba(0, 0, 0, .3);
+}
+
+
+/* HEADER */
+.header {
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__container {
+  text-align: center;
+}
+
+.header__title {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 5rem;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
+/* SEC 1 */
+.sec-um {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-um > div {
+  width: 30%;
+}
+
+.sec-um__imagem img {
+  width: 100%;
+  border-radius: 4rem;
+  transition: .5s all;
+}
+
+.sec-um__imagem img:hover {
+  transform: rotate(360deg);
+}
+
+.sec-um__text {
+  color: black;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: color 0.3s, text-shadow 2s;
+}
+
+.sec-um__text:hover {
+  color: #ff2525;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sec-um__lista li {
+  margin: 0;
+  transition: 1s all;
+}
+
+.sec-um__lista li:active {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+/* SEC 2 */
+.sec-dois {
+  min-height: 25rem;
+}
+
+.sec-dois__keyframes {
+  min-height: 7rem;
+  display: flex;
+  align-items: flex-end;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.square {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  transform: translateX(-50%);
+  position: relative;
+  animation: quadrado 5s alternate infinite ease-in-out;
+}
+
+@keyframes quadrado {
+  0% {
+    width: 100px;
+    height: 1px;
+    right: 0;
+    background-color: black;
+  }
+  50% {
+    height: 50px;
+    right: -50%;
+    background-color: red;
+    border-radius: 0;
+  }
+  100% {
+    height: 100px;
+    right: -90%;
+    background-color: green;
+    border-radius: 50px;
+  }
+}
+
+/* SEC TRES */
+.sec-tres {
+  text-align: center;
+  min-height: 8rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-around;
+  max-width: 11rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  opacity: 0;
+  transition: .5s all;
+}
+
+.loader.active {
+  opacity: 1;
+}
+
+.circle {
+  background-color: #ccc;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  top: 0;
+  opacity: 1;
+  filter: blur(0);
+}
+
+#circleOne {
+  animation: loading 1s ease-in-out infinite alternate;
+}
+
+#circleTwo {
+  animation: loading 1s .25s ease-in-out infinite alternate;
+}
+
+#circleThree {
+  animation: loading 1s .5s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: scale(0);
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+
+/* SEC QUATRO */
+.sec-quatro {
+  text-align: center;
+}
+
+.sec-quatro__cenario {
+  position: relative;
+  min-height: 18rem;
+}
+
+.sec-quatro__cenario > img {
+  position: absolute;
+  bottom: 0;
+}
+
+.img-caixa {
+  right: 90%;
+  max-height: 5rem;
+}
+
+.caixa-animation {
+  animation: caixa 1s 2s ease forwards, caixa-entregue 5s 7s ease forwards;
+}
+
+.img-senhora {
+  right: 0;
+  max-height: 12rem;
+}
+
+.senhora-animation {
+  animation: senhora .5s ease-in-out infinite alternate;
+}
+
+.img-caminhao {
+  right: 10rem;
+}
+
+.caminhao-animation {
+  animation: caminhao 10s ease forwards;
+}
+
+@keyframes caminhao {
+  25% {
+    transform: rotateY(0);
+    right: 55rem;
+  }
+  
+  49% {
+    transform: rotateY(0);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    right: 100rem;
+  }
+
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes caixa {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes caixa-entregue {
+  0% {
+    opacity: 0;
+    right: 30rem;
+    top: 4rem;
+  }
+
+  40% {
+    top: 4rem;
+  }
+
+  50% {
+    top: -4rem;
+    right: 30rem;
+  }
+
+  75% {
+    right: 1rem;
+  }
+
+  100% {
+    top: -1rem;
+    right: 1rem;
+    opacity: 1;
+  }
+}
+
+@keyframes senhora {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
