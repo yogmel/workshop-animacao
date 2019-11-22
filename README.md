@@ -21,6 +21,8 @@ Também é necessário ter um **IDE ou editor de texto**, como Visual Studio Cod
     1. _public-alunos_: arquivos com toda estrutura HTML e com comentários em CSS, sem propriedades de animação. Bom pra quem quer praticar.
     2. _public-resolvido_: arquivos com estrutura completa de HTML e CSS, com animações prontas. Bom pra consulta ou estudo.
 
+![Slide apresentando @keyframes, usado para animações mais complexas](./readme-img/img05.png)
+
 -------------
 
 ### Dúvidas?
