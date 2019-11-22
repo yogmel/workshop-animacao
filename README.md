@@ -4,6 +4,12 @@ Repositório referente ao Workshop de Animações em CSS, ministrado no dia 15/0
 
 Os slides estão disponíveis neste [link](https://speakerdeck.com/yogmel/animacoes-em-css-codamos-cpbr-2019).
 
+### Alguns slides
+![Slide que mostra pontos a se considerar a usar Adobe Flash em suas animações](./readme-img/img01.png)
+![Slide mostrando qual o foco da animação, que é o meio, não o início nem o fim](./readme-img/img02.png)
+![Slide introduzindo estados básicos animáveis como :hover e transition](./readme-img/img03.png)
+![Slide apresentando @keyframes, usado para animações mais complexas](./readme-img/img04.png)
+
 ## Pré-requisitos para navegação
 Para entender esses documentos, é necessário ter uma noção básica de HTML e CSS. Para isso, sugiro ler algumas seções desse [repositório](https://github.com/reprograma/html-css-basico#html).
 
